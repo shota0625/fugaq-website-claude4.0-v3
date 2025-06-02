@@ -944,6 +944,7 @@ blockquote {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-3xl);
+    width: 100%;
 }
 
 .result-card {

@@ -241,18 +241,21 @@ blockquote {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    border-color: var(--color-primary);
+    background-color: #ffc107; /* New gold color */
+    color: var(--color-primary); /* Dark text for contrast on gold */
+    border-color: #ffc107; /* Match background */
+    font-weight: bold; /* Bolder font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
-    color: var(--color-white);
+    background-color: #e0a800; /* Darker gold on hover */
+    border-color: #e0a800; /* Match hover background */
+    color: var(--color-primary); /* Keep dark text */
     text-decoration: none;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px); /* Slightly more lift */
+    box-shadow: var(--shadow-lg); /* Keep or enhance shadow, var(--shadow-lg) is good */
 }
 
 .btn-secondary {
@@ -781,6 +784,14 @@ blockquote {
 }
 
 /* Override for hero CTA to use accent color */
+/* The .hero-cta .btn-primary and .cta-buttons .btn-primary already use accent colors. */
+/* The new base .btn-primary styles will make them use #ffc107 and #e0a800. */
+/* If specific shades for hero/CTA are still needed, those rules would need to be adjusted or kept. */
+/* For now, allowing them to inherit the new .btn-primary gold styling. */
+
+/* Original .hero-cta .btn-primary - this will now inherit the new gold from .btn-primary */
+/* If a different gold was intended here (var(--color-accent) which is #d4af37), this rule would need to be re-asserted */
+/* For example:
 .hero-cta .btn-primary {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -792,6 +803,8 @@ blockquote {
     border-color: var(--color-accent-dark);
     color: var(--color-primary);
 }
+*/
+/* For this task, we assume the new gold #ffc107 is desired for these as well, so we let them inherit. */
 
 @media (max-width: 768px) {
     .hero {
@@ -1432,17 +1445,9 @@ blockquote {
     flex-wrap: wrap;
 }
 
-.cta-buttons .btn-primary {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-primary); /* Ensure dark text on gold for contrast */
-}
-
-.cta-buttons .btn-primary:hover {
-    background: var(--color-accent-dark);
-    border-color: var(--color-accent-dark);
-    color: var(--color-primary); /* Ensure dark text on gold for contrast */
-}
+/* Similar to .hero-cta, .cta-buttons .btn-primary will inherit the new gold styles. */
+/* If var(--color-accent) #d4af37 was specifically desired, this rule would also need re-assertion. */
+/* For this task, we assume the new gold #ffc107 is desired for these as well. */
 
 .cta-buttons .btn-secondary {
     background: transparent;

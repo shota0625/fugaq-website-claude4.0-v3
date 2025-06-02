@@ -1014,8 +1014,33 @@ blockquote {
 }
 
 /* YouTube特有のスタイル */
-.result-card.youtube .platform-stats .stat-number {
-    color: var(--color-youtube);
+.results-grid .result-card.youtube {
+    grid-column: 1 / -1; /* Make it span full width */
+}
+
+.results-grid .result-card.youtube .platform-icon img {
+    height: 40px; /* Match other cards in results-grid */
+}
+
+.results-grid .result-card.youtube .platform-name {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.results-grid .result-card.youtube .platform-stats .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-youtube); /* YouTube specific color */
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.results-grid .result-card.youtube .platform-stats .stat-label {
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    font-weight: 500;
 }
 
 /* Instagram特有のスタイル */
@@ -4195,7 +4220,7 @@ body.loaded::after {
 
 /* Emphasize YouTube card in portfolio.html */
 .platform-performance.youtube-performance {
-    grid-column: span 2; /* 他のカードの2倍の幅を取る */
+    grid-column: 1 / -1; /* Make it span full width */
 }
 
 /* Responsive YouTube video in portfolio.html */

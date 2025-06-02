@@ -948,15 +948,14 @@ blockquote {
 
 .result-card {
     background: var(--color-white);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg); /* Adjusted padding */
+    border-radius: var(--radius-xl); /* Adjusted border-radius */
+    box-shadow: var(--shadow-lg); /* Adjusted default shadow */
     text-align: center;
     position: relative;
     overflow: hidden;
-    /* transition: all var(--transition-normal); */ /* Replaced by more specific below */
-    border: 1px solid var(--color-gray-200); /* Ensure a base border for transition */
-    transition: all var(--transition-normal), border-color var(--transition-fast); /* Add border-color to transition */
+    border: 1px solid var(--color-gray-100); /* Adjusted border color */
+    transition: all var(--transition-normal), border-color var(--transition-fast), transform var(--transition-normal);
 }
 
 .result-card::before {
@@ -967,21 +966,21 @@ blockquote {
     right: 0;
     height: 4px;
     background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-    transition: height var(--transition-fast); /* Add transition for height */
+    transition: height var(--transition-fast);
 }
 
 .result-card:hover {
-    transform: translateY(-6px); /* Slightly more lift */
-    box-shadow: var(--shadow-xl); /* Existing shadow is good */
-    border-color: var(--color-accent); /* Accent border on hover */
+    transform: translateY(-8px); /* Adjusted hover transform */
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-accent-light); /* Adjusted hover border color */
 }
 
 .result-card:hover::before {
-     height: 6px; /* Slightly thicker accent bar on hover */
+     height: 6px;
 }
 
 .platform-icon {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md); /* Adjusted margin */
     display: flex;
     justify-content: center;
 }
@@ -994,15 +993,15 @@ blockquote {
 }
 
 .platform-name {
-    font-size: 1.25rem;
+    font-size: 1.35rem; /* Adjusted font-size */
     font-weight: 600;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm); /* Adjusted margin */
 }
 
 .platform-stats .stat-number {
-    font-size: 2.25rem; /* Increased from 2rem */
-    font-weight: 700; /* Ensure it's bold */
+    font-size: 2rem; /* Adjusted font-size */
+    font-weight: 700;
     color: var(--color-accent);
     display: block;
     margin-bottom: var(--spacing-xs);
@@ -1010,8 +1009,8 @@ blockquote {
 
 .platform-stats .stat-label {
     font-size: 0.875rem;
-    color: var(--color-gray-600);
-    font-weight: 400; /* Explicitly set to 400 */
+    color: var(--color-gray-500); /* Adjusted color */
+    font-weight: 500; /* Adjusted font-weight */
 }
 
 /* YouTube特有のスタイル */
@@ -1042,11 +1041,11 @@ blockquote {
     text-align: center;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
     color: var(--color-white);
-    padding: var(--spacing-3xl);
+    padding: var(--spacing-2xl); /* Adjusted padding */
     border-radius: var(--radius-xl);
     margin-top: var(--spacing-3xl);
-    box-shadow: var(--shadow-lg); /* Add or ensure a shadow */
-    position: relative; /* For potential pseudo-elements */
+    box-shadow: var(--shadow-lg);
+    position: relative;
 }
 
 .total-reach::after {
@@ -2577,7 +2576,7 @@ blockquote {
     margin-bottom: var(--spacing-2xl);
 }
 .partner-header .partner-name { /* This is an h2 in HTML, but styled like h3 or specific title */
-    font-size: 1.75rem; /* Adjust if section-title class is not used on it */
+    font-size: 1.85rem; /* Adjusted font-size */
     color: var(--color-primary);
     margin-bottom: var(--spacing-sm);
 }
@@ -2586,6 +2585,7 @@ blockquote {
     color: var(--color-gray-600);
     max-width: 700px;
     margin: 0 auto;
+    line-height: 1.7; /* Added line-height */
 }
 .performance-grid {
     display: grid;
@@ -2595,46 +2595,47 @@ blockquote {
 }
 .platform-performance {
     background-color: var(--color-white);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-gray-200); /* Added border */
-    box-shadow: var(--shadow-lg); /* Updated shadow */
-    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl); /* Adjusted border-radius */
+    border: 1px solid var(--color-gray-100); /* Adjusted border color */
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg); /* Adjusted padding */
     display: flex;
     flex-direction: column;
-    transition: all var(--transition-normal); /* Added transition */
+    transition: all var(--transition-normal), border-color var(--transition-fast), transform var(--transition-normal);
 }
 
 .platform-performance:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px); /* Adjusted hover transform */
     box-shadow: var(--shadow-xl);
-    border-color: var(--color-accent-light);
+    border-color: var(--color-accent-light); /* Adjusted hover border color */
 }
 
 .platform-performance .platform-header {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md); /* Adjusted margin */
 }
-.platform-performance .platform-icon svg {
-    width: 50px; /* Adjusted from 60px for potentially smaller header space */
-    height: 50px; /* Make it square */
+.platform-performance .platform-icon svg { /* This will be overridden by img style if SVGs are fully replaced */
+    width: 50px;
+    height: 50px;
 }
 .platform-performance .platform-name { /* h3 */
-    font-size: 1.5rem;
+    font-size: 1.35rem; /* Adjusted font-size, same as .result-card .platform-name */
     color: var(--color-primary);
+    font-weight: 600; /* Added font-weight for consistency */
     margin-bottom: 0;
 }
 .platform-performance .main-stat .stat-number {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Adjusted font-size */
     font-weight: 700;
     margin-bottom: var(--spacing-xs);
     /* Color is platform-specific via HTML classes */
 }
 .platform-performance .main-stat .stat-label {
     font-size: 0.875rem;
-    color: var(--color-gray-600);
-    font-weight: 400;
+    color: var(--color-gray-500); /* Adjusted color */
+    font-weight: 500; /* Adjusted font-weight */
 }
 .platform-performance .sub-stats {
     font-size: 0.9rem;
@@ -4166,4 +4167,49 @@ body.loading::after {
 body.loaded::before,
 body.loaded::after {
     display: none;
+}
+
+/* SNS Logo Image Styles */
+.platform-icon img {
+    max-width: 100%; /* 親要素の幅に収まるように */
+    height: 50px;    /* 高さを統一、またはautoで縦横比維持 */
+    object-fit: contain; /* 画像がコンテナに収まるように調整 */
+    transition: transform var(--transition-normal); /* ホバーエフェクト用 */
+}
+
+/* portfolio.html specific adjustments (larger icons) */
+.platform-performance .platform-icon img {
+    height: 60px; /* portfolio.htmlでは少し大きく */
+}
+
+/* index.html specific adjustments (smaller icons in result-card) */
+.result-card .platform-icon img {
+    height: 40px; /* result-cardでは少し小さく */
+}
+
+/* Hover effect for new img logos */
+.result-card:hover .platform-icon img,
+.platform-performance:hover .platform-icon img { /* portfolio.html hover */
+    transform: scale(1.1);
+}
+
+/* Emphasize YouTube card in portfolio.html */
+.platform-performance.youtube-performance {
+    grid-column: span 2; /* 他のカードの2倍の幅を取る */
+}
+
+/* Responsive YouTube video in portfolio.html */
+.platform-performance.youtube-performance iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: auto; /* Override HTML height attribute */
+    border-radius: var(--radius-md); /* Match existing style */
+    margin-top: 20px; /* Match existing style */
+}
+
+/* Adjustments for smaller screens (e.g., below 768px) */
+@media (max-width: 768px) {
+    .platform-performance.youtube-performance {
+        grid-column: span 1; /* Revert to single column */
+    }
 }

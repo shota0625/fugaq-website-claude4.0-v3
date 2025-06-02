@@ -1198,21 +1198,23 @@ blockquote {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     gap: var(--spacing-2xl);
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Changed from flex-start to center */
 }
 .vision-text {
     flex: 2; /* Takes more space */
     min-width: 300px; /* Minimum width before wrapping */
+    flex-basis: 60%; /* Give a more explicit basis */
 }
 .vision-visual {
     flex: 1; /* Takes less space */
     min-width: 250px; /* Minimum width */
+    flex-basis: 35%; /* Give a more explicit basis */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .philosophy-item {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md); /* Changed from --spacing-xl */
 }
 .philosophy-item:last-child {
     margin-bottom: 0;
@@ -1232,6 +1234,22 @@ blockquote {
     max-width: 350px;
     height: auto;
     border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+    .vision-content {
+        flex-direction: column;
+        align-items: stretch; /* Stretch items to full width */
+    }
+    .vision-text,
+    .vision-visual {
+        flex-basis: auto; /* Reset basis for stacked layout */
+        width: 100%; /* Ensure full width when stacked */
+        min-width: unset; /* Unset min-width for stacked layout */
+    }
+    .vision-visual {
+        margin-top: var(--spacing-xl); /* Add some space when stacked */
+    }
 }
 
 /* Company Information Table Section */
@@ -2328,6 +2346,10 @@ blockquote {
 .faq-item {
     border-bottom: 1px solid var(--color-gray-200);
     padding: var(--spacing-md) 0;
+    transition: background-color var(--transition-fast); /* Added for hover effect */
+}
+.faq-item:hover {
+    background-color: var(--color-gray-50); /* Light background on hover */
 }
 .faq-question {
     font-weight: 500;
@@ -3797,15 +3819,16 @@ html {
 
 .contact-faq .faq-answer {
     color: var(--color-gray-700);
-    padding: var(--spacing-md) 0;
+    padding: 0 var(--spacing-sm); /* Adjusted padding to be 0 when collapsed, and applied horizontally */
     max-height: 0;
+    line-height: 1.7; /* Explicitly set line-height */
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
 }
 
 .contact-faq .faq-answer.active {
     max-height: 1000px; /* Adjust as needed for content */
-    padding: var(--spacing-md) 0; /* Ensure padding is applied when active */
+    padding: var(--spacing-md) var(--spacing-sm); /* Ensure padding is applied when active, with horizontal */
     transition: max-height 0.5s ease-in, padding 0.3s ease-in;
 }
 
@@ -4198,7 +4221,8 @@ body.loaded::after {
 /* SNS Logo Image Styles */
 .platform-icon img {
     max-width: 100%; /* 親要素の幅に収まるように */
-    height: 50px;    /* 高さを統一、またはautoで縦横比維持 */
+    height: 50px;    /* 高さを統一 */
+    width: auto;     /* 縦横比を維持 */
     object-fit: contain; /* 画像がコンテナに収まるように調整 */
     transition: transform var(--transition-normal); /* ホバーエフェクト用 */
 }
@@ -4215,7 +4239,8 @@ body.loaded::after {
 
 /* Hover effect for new img logos */
 .result-card:hover .platform-icon img,
-.platform-performance:hover .platform-icon img { /* portfolio.html hover */
+.platform-performance:hover .platform-icon img, /* portfolio.html hover */
+.platform-card:hover .platform-icon img { /* services.html hover */
     transform: scale(1.1);
 }
 

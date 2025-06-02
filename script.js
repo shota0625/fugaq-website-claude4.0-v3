@@ -25,6 +25,7 @@ class FugaqWebsite {
         this.checkViewport();
         this.initLazyLoading();
         this.setupAnalytics();
+        this.initFAQ(); // Initialize FAQ functionality
     }
 
     /**
@@ -729,6 +730,26 @@ class FugaqWebsite {
             rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
             rect.left <= (window.innerWidth || document.documentElement.clientWidth)
         );
+    }
+
+    /**
+     * FAQ機能の初期化
+     */
+    initFAQ() {
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Toggle active class on the question itself
+                question.classList.toggle('active');
+
+                // Get the corresponding answer element (next sibling)
+                const answer = question.nextElementSibling;
+                if (answer && answer.classList.contains('faq-answer')) {
+                    answer.classList.toggle('active');
+                }
+            });
+        });
     }
 }
 

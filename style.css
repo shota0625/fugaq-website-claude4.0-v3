@@ -1204,6 +1204,7 @@ blockquote {
     flex: 2; /* Takes more space */
     min-width: 300px; /* Minimum width before wrapping */
     flex-basis: 60%; /* Give a more explicit basis */
+    text-align: center; /* Center text content horizontally */
 }
 .vision-visual {
     flex: 1; /* Takes less space */

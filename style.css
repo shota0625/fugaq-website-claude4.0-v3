@@ -2846,6 +2846,19 @@ blockquote {
   box-shadow: var(--shadow-md); /* Using existing shadow variable for consistency */
 }
 
+.profile-image-refined-large {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+  box-shadow: var(--shadow-md);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px; /* From original inline style */
+}
+
 /* ==========================================================================
    フォームスタイル
    ========================================================================== */

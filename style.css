@@ -1216,6 +1216,8 @@ blockquote {
 }
 .philosophy-item {
     margin-bottom: var(--spacing-md); /* Changed from --spacing-xl */
+    display: inline-block; 
+    text-align: left; 
 }
 .philosophy-item:last-child {
     margin-bottom: 0;

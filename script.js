@@ -754,7 +754,7 @@ class FugaqWebsite {
 }
 
 // AIチャットボット機能（準備段階）
-class AIChartBot {
+class AIChatBot {
     constructor() {
         this.isEnabled = false; // 将来の実装用
         this.init();
@@ -786,7 +786,7 @@ window.aiChatBot = null;
 // ページ読み込み時に初期化
 document.addEventListener('DOMContentLoaded', function() {
     window.fugaqWebsite = new FugaqWebsite();
-    window.aiChatBot = new AIChartBot();
+    window.aiChatBot = new AIChatBot();
 });
 
 // 他のスクリプトから利用可能なヘルパー関数

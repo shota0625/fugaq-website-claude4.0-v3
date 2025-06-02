@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- メインページ - 最高優先度 -->
+    <url>
+        <loc>https://fugaq.com/</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/?lang=en" />
+    </url>
+    
+    <!-- 会社情報ページ -->
+    <url>
+        <loc>https://fugaq.com/company.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/company.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/company.html?lang=en" />
+    </url>
+    
+    <!-- サービスページ -->
+    <url>
+        <loc>https://fugaq.com/services.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/services.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/services.html?lang=en" />
+    </url>
+    
+    <!-- 実績・メディア掲載ページ -->
+    <url>
+        <loc>https://fugaq.com/portfolio.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/portfolio.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/portfolio.html?lang=en" />
+    </url>
+    
+    <!-- お知らせページ -->
+    <url>
+        <loc>https://fugaq.com/news.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/news.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/news.html?lang=en" />
+    </url>
+    
+    <!-- IR情報ページ -->
+    <url>
+        <loc>https://fugaq.com/ir.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/ir.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/ir.html?lang=en" />
+    </url>
+    
+    <!-- 電子公告ページ - 重要な法的ページ -->
+    <url>
+        <loc>https://fugaq.com/ir/announcement/</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/ir/announcement/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/ir/announcement/?lang=en" />
+    </url>
+    
+    <!-- お問い合わせページ -->
+    <url>
+        <loc>https://fugaq.com/contact.html</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://fugaq.com/contact.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://fugaq.com/contact.html?lang=en" />
+    </url>
+</urlset>

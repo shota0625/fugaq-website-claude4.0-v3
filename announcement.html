@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子公告 | フガク株式会社</title>
+    <meta name="description" content="フガク株式会社の電子公告ページ。会社法に基づく法定公告、決算公告、組織変更に関する公告、その他法定公告事項を掲載いたします。日付順表示、検索・フィルタリング機能、PDF文書表示、アーカイブ機能を提供。">
+    <meta name="keywords" content="電子公告,法定公告,決算公告,組織変更,会社法,PDF文書,アーカイブ,フガク株式会社">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">FUGAQ</span>
+                    <span class="logo-subtitle" data-ja="フガク株式会社" data-en="FUGAQ Inc.">フガク株式会社</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                    <li><a href="company.html" class="nav-link" data-ja="会社情報" data-en="Company">会社情報</a></li>
+                    <li><a href="services.html" class="nav-link" data-ja="サービス" data-en="Services">サービス</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-ja="実績・メディア掲載" data-en="Portfolio & Media">実績・メディア掲載</a></li>
+                    <li><a href="news.html" class="nav-link" data-ja="お知らせ" data-en="News">お知らせ</a></li>
+                    <li><a href="ir.html" class="nav-link" data-ja="IR情報" data-en="IR Information">IR情報</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                </ul>
+                
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ja">日本語</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a>
+                <span class="separator">></span>
+                <a href="ir.html" data-ja="IR情報" data-en="IR Information">IR情報</a>
+                <span class="separator">></span>
+                <span data-ja="電子公告" data-en="Electronic Announcements">電子公告</span>
+            </div>
+            <h1 class="page-title" data-ja="電子公告" data-en="Electronic Announcements">電子公告</h1>
+            <p class="page-subtitle" data-ja="会社法に基づく法定公告を電子公告により実施" data-en="Statutory announcements required by the Companies Act conducted electronically">会社法に基づく法定公告を電子公告により実施</p>
+        </div>
+    </section>
+
+    <!-- Legal Notice -->
+    <section class="legal-notice">
+        <div class="container">
+            <div class="notice-content">
+                <h2 class="notice-title" data-ja="電子公告について" data-en="About Electronic Announcements">電子公告について</h2>
+                <p class="notice-text" data-ja="フガク株式会社は、会社法第440条第4項および定款の規定に基づき、決算公告その他の法定公告を電子公告により行います。" data-en="FUGAQ Inc. conducts financial announcements and other statutory announcements electronically based on Article 440, Paragraph 4 of the Companies Act and the provisions of our articles of incorporation.">フガク株式会社は、会社法第440条第4項および定款の規定に基づき、決算公告その他の法定公告を電子公告により行います。</p>
+                
+                <div class="legal-details">
+                    <div class="detail-item">
+                        <h3 data-ja="公告方法" data-en="Announcement Method">公告方法</h3>
+                        <p data-ja="電子公告（当社ウェブサイト：https://fugaq.com/ir/announcement/）" data-en="Electronic announcement (Company website: https://fugaq.com/ir/announcement/)">電子公告（当社ウェブサイト：https://fugaq.com/ir/announcement/）</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3 data-ja="掲載期間" data-en="Publication Period">掲載期間</h3>
+                        <p data-ja="法定期間に従い、各公告ごとに定められた期間掲載いたします" data-en="Published for the period specified for each announcement in accordance with statutory requirements">法定期間に従い、各公告ごとに定められた期間掲載いたします</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3 data-ja="掲載責任者" data-en="Publication Responsible Person">掲載責任者</h3>
+                        <p data-ja="代表取締役 西津翔太" data-en="CEO Shota Nishitsu">代表取締役 西津翔太</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="announcement-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h2 class="section-title" data-ja="公告検索・フィルタ" data-en="Announcement Search & Filter">公告検索・フィルタ</h2>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label class="filter-label" data-ja="公告カテゴリ" data-en="Category">公告カテゴリ</label>
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="all" data-ja="すべて" data-en="All">すべて</option>
+                            <option value="financial" data-ja="決算公告" data-en="Financial Announcements">決算公告</option>
+                            <option value="organizational" data-ja="組織変更" data-en="Organizational Changes">組織変更</option>
+                            <option value="other" data-ja="その他" data-en="Others">その他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label class="filter-label" data-ja="期間" data-en="Period">期間</label>
+                        <select class="filter-select" id="periodFilter">
+                            <option value="all" data-ja="すべて" data-en="All">すべて</option>
+                            <option value="2025" data-ja="2025年" data-en="2025">2025年</option>
+                            <option value="2026" data-ja="2026年" data-en="2026">2026年</option>
+                            <option value="2027" data-ja="2027年" data-en="2027">2027年</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label class="filter-label" data-ja="並び順" data-en="Sort Order">並び順</label>
+                        <select class="filter-select" id="sortOrder">
+                            <option value="desc" data-ja="新しい順" data-en="Newest First">新しい順</option>
+                            <option value="asc" data-ja="古い順" data-en="Oldest First">古い順</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="search-row">
+                    <div class="search-group">
+                        <label class="search-label" data-ja="キーワード検索" data-en="Keyword Search">キーワード検索</label>
+                        <div class="search-input-group">
+                            <input type="text" class="search-input" id="keywordSearch" placeholder="キーワードを入力..." data-placeholder-ja="キーワードを入力..." data-placeholder-en="Enter keywords...">
+                            <button class="search-btn" id="searchButton">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <line x1="16" y1="16" x2="13" y2="13" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button class="clear-filters-btn" id="clearFilters" data-ja="フィルタクリア" data-en="Clear Filters">フィルタクリア</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Content -->
+    <section class="announcements-content">
+        <div class="container">
+            <!-- Preparation Notice -->
+            <div class="preparation-notice">
+                <div class="notice-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80">
+                        <circle cx="40" cy="40" r="35" stroke="#d4af37" stroke-width="3" fill="none"/>
+                        <circle cx="40" cy="40" r="20" fill="#d4af37" opacity="0.2"/>
+                        <rect x="30" y="25" width="20" height="25" rx="2" stroke="#d4af37" stroke-width="2" fill="none"/>
+                        <line x1="35" y1="30" x2="45" y2="30" stroke="#d4af37" stroke-width="2"/>
+                        <line x1="35" y1="35" x2="45" y2="35" stroke="#d4af37" stroke-width="1"/>
+                        <line x1="35" y1="40" x2="42" y2="40" stroke="#d4af37" stroke-width="1"/>
+                    </svg>
+                </div>
+                <h3 data-ja="電子公告システム 準備中" data-en="Electronic Announcement System Under Preparation">電子公告システム 準備中</h3>
+                <p data-ja="現在、法定公告の電子掲載システムを整備中です。2025年4月1日の設立以降、法的要件に従って各種公告を順次掲載してまいります。" data-en="We are currently preparing our electronic publication system for statutory announcements. Following our establishment on April 1, 2025, we will sequentially publish various announcements in accordance with legal requirements.">現在、法定公告の電子掲載システムを整備中です。2025年4月1日の設立以降、法的要件に従って各種公告を順次掲載してまいります。</p>
+            </div>
+
+            <!-- Upcoming Announcements Schedule -->
+            <div class="upcoming-schedule">
+                <h3 data-ja="公告掲載予定" data-en="Scheduled Announcements">公告掲載予定</h3>
+                
+                <div class="schedule-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-year">2025</span>
+                            <span class="date-month" data-ja="4月" data-en="April">4月</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 data-ja="設立登記完了公告" data-en="Incorporation Registration Completion Notice">設立登記完了公告</h4>
+                            <p data-ja="会社設立登記の完了に関する公告" data-en="Announcement regarding completion of company incorporation registration">会社設立登記の完了に関する公告</p>
+                            <span class="announcement-type organizational" data-ja="組織変更" data-en="Organizational">組織変更</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-year">2026</span>
+                            <span class="date-month" data-ja="4月" data-en="April">4月</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 data-ja="第1期決算公告" data-en="1st Term Financial Announcement">第1期決算公告</h4>
+                            <p data-ja="第1期（2025年4月1日〜2026年3月31日）決算に関する公告" data-en="Financial announcement for 1st term (April 1, 2025 - March 31, 2026)">第1期（2025年4月1日〜2026年3月31日）決算に関する公告</p>
+                            <span class="announcement-type financial" data-ja="決算公告" data-en="Financial">決算公告</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-year">2027</span>
+                            <span class="date-month" data-ja="4月" data-en="April">4月</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 data-ja="第2期決算公告" data-en="2nd Term Financial Announcement">第2期決算公告</h4>
+                            <p data-ja="第2期（2026年4月1日〜2027年3月31日）決算に関する公告" data-en="Financial announcement for 2nd term (April 1, 2026 - March 31, 2027)">第2期（2026年4月1日〜2027年3月31日）決算に関する公告</p>
+                            <span class="announcement-type financial" data-ja="決算公告" data-en="Financial">決算公告</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item future">
+                        <div class="timeline-date">
+                            <span class="date-year" data-ja="随時" data-en="As Needed">随時</span>
+                            <span class="date-month"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 data-ja="その他法定公告" data-en="Other Statutory Announcements">その他法定公告</h4>
+                            <p data-ja="役員変更、定款変更、その他法定要件に基づく公告" data-en="Executive changes, articles of incorporation amendments, and other announcements based on statutory requirements">役員変更、定款変更、その他法定要件に基づく公告</p>
+                            <span class="announcement-type other" data-ja="その他" data-en="Others">その他</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Features -->
+            <div class="system-features">
+                <h3 data-ja="電子公告システムの機能" data-en="Electronic Announcement System Features">電子公告システムの機能</h3>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <rect x="5" y="10" width="40" height="30" rx="3" stroke="#1a365d" stroke-width="2" fill="none"/>
+                                <line x1="15" y1="20" x2="35" y2="20" stroke="#d4af37" stroke-width="2"/>
+                                <line x1="15" y1="25" x2="30" y2="25" stroke="#1a365d" stroke-width="1"/>
+                                <line x1="15" y1="30" x2="25" y2="30" stroke="#1a365d" stroke-width="1"/>
+                                <circle cx="35" cy="5" r="3" fill="#d4af37"/>
+                                <text x="35" y="8" text-anchor="middle" font-size="6" fill="white">新</text>
+                            </svg>
+                        </div>
+                        <h4 data-ja="日付順表示" data-en="Chronological Display">日付順表示</h4>
+                        <p data-ja="すべての公告を掲載日順に整理し、最新情報から確認できます" data-en="All announcements organized by publication date, viewable from latest information">すべての公告を掲載日順に整理し、最新情報から確認できます</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <circle cx="25" cy="25" r="18" stroke="#1a365d" stroke-width="2" fill="none"/>
+                                <circle cx="25" cy="25" r="3" fill="#d4af37"/>
+                                <line x1="25" y1="25" x2="35" y2="15" stroke="#d4af37" stroke-width="2"/>
+                                <line x1="25" y1="25" x2="25" y2="10" stroke="#d4af37" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4 data-ja="検索・フィルタリング" data-en="Search & Filtering">検索・フィルタリング</h4>
+                        <p data-ja="カテゴリ、期間、キーワードによる公告の絞り込み検索機能" data-en="Announcement filtering by category, period, and keyword search">カテゴリ、期間、キーワードによる公告の絞り込み検索機能</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <rect x="10" y="10" width="30" height="35" rx="2" stroke="#1a365d" stroke-width="2" fill="none"/>
+                                <rect x="15" y="15" width="20" height="15" fill="#d4af37" opacity="0.3"/>
+                                <line x1="15" y1="35" x2="35" y2="35" stroke="#1a365d" stroke-width="1"/>
+                                <line x1="15" y1="39" x2="30" y2="39" stroke="#1a365d" stroke-width="1"/>
+                                <text x="25" y="25" text-anchor="middle" font-size="8" fill="#1a365d">PDF</text>
+                            </svg>
+                        </div>
+                        <h4 data-ja="PDF文書表示" data-en="PDF Document Display">PDF文書表示</h4>
+                        <p data-ja="公告文書をPDF形式で提供し、正確な情報を確認できます" data-en="Announcement documents provided in PDF format for accurate information verification">公告文書をPDF形式で提供し、正確な情報を確認できます</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <rect x="5" y="15" width="40" height="25" rx="3" stroke="#1a365d" stroke-width="2" fill="none"/>
+                                <rect x="10" y="20" width="30" height="3" fill="#d4af37"/>
+                                <rect x="10" y="26" width="25" height="2" fill="#1a365d"/>
+                                <rect x="10" y="30" width="20" height="2" fill="#1a365d"/>
+                                <rect x="10" y="34" width="15" height="2" fill="#1a365d"/>
+                            </svg>
+                        </div>
+                        <h4 data-ja="アーカイブ機能" data-en="Archive Function">アーカイブ機能</h4>
+                        <p data-ja="過去の公告をすべて保管し、いつでも参照できる体制" data-en="All past announcements archived and accessible at any time">過去の公告をすべて保管し、いつでも参照できる体制</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message (for when search/filter returns no results) -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="25" stroke="#cbd5e0" stroke-width="2" fill="none"/>
+                        <circle cx="25" cy="25" r="8" stroke="#cbd5e0" stroke-width="2" fill="none"/>
+                        <line x1="40" y1="40" x2="35" y2="35" stroke="#cbd5e0" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 data-ja="該当する公告が見つかりません" data-en="No Matching Announcements Found">該当する公告が見つかりません</h3>
+                <p data-ja="検索条件を変更してお試しください" data-en="Please try changing your search criteria">検索条件を変更してお試しください</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Information -->
+    <section class="legal-information">
+        <div class="container">
+            <h2 class="section-title" data-ja="法的情報" data-en="Legal Information">法的情報</h2>
+            
+            <div class="legal-content">
+                <div class="legal-item">
+                    <h3 data-ja="電子公告の法的根拠" data-en="Legal Basis for Electronic Announcements">電子公告の法的根拠</h3>
+                    <ul>
+                        <li data-ja="会社法第440条第4項（電子公告による公告）" data-en="Companies Act Article 440, Paragraph 4 (Announcements by electronic means)">会社法第440条第4項（電子公告による公告）</li>
+                        <li data-ja="会社法施行規則第221条（電子公告の方法）" data-en="Companies Act Enforcement Regulations Article 221 (Method of electronic announcements)">会社法施行規則第221条（電子公告の方法）</li>
+                        <li data-ja="当社定款第4条（公告方法）" data-en="Article 4 of our Articles of Incorporation (Method of announcements)">当社定款第4条（公告方法）</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-item">
+                    <h3 data-ja="掲載期間と保存義務" data-en="Publication Period and Retention Obligation">掲載期間と保存義務</h3>
+                    <ul>
+                        <li data-ja="決算公告：5年間の掲載・保存" data-en="Financial announcements: 5-year publication and retention">決算公告：5年間の掲載・保存</li>
+                        <li data-ja="組織変更公告：法定期間に従い掲載" data-en="Organizational change announcements: Published according to statutory period">組織変更公告：法定期間に従い掲載</li>
+                        <li data-ja="その他公告：各公告の法的要件に従い掲載" data-en="Other announcements: Published according to legal requirements for each announcement">その他公告：各公告の法的要件に従い掲載</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-item">
+                    <h3 data-ja="電子公告の効力" data-en="Effectiveness of Electronic Announcements">電子公告の効力</h3>
+                    <p data-ja="本ページに掲載される電子公告は、会社法に基づく正式な法定公告としての効力を有します。掲載開始日をもって公告の効力が発生いたします。" data-en="Electronic announcements published on this page have the effect of formal statutory announcements based on the Companies Act. The effectiveness of announcements takes effect from the publication start date.">本ページに掲載される電子公告は、会社法に基づく正式な法定公告としての効力を有します。掲載開始日をもって公告の効力が発生いたします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="announcement-contact">
+        <div class="container">
+            <h2 class="section-title" data-ja="電子公告に関するお問い合わせ" data-en="Inquiries Regarding Electronic Announcements">電子公告に関するお問い合わせ</h2>
+            
+            <div class="contact-content">
+                <p data-ja="電子公告の内容に関するご質問、技術的な問題、その他電子公告に関するお問い合わせは、以下までご連絡ください。" data-en="For questions about the content of electronic announcements, technical issues, or other inquiries regarding electronic announcements, please contact us using the information below.">電子公告の内容に関するご質問、技術的な問題、その他電子公告に関するお問い合わせは、以下までご連絡ください。</p>
+                
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h4 data-ja="お問い合わせ先" data-en="Contact Information">お問い合わせ先</h4>
+                        <p><strong data-ja="フガク株式会社 管理部門" data-en="FUGAQ Inc. Administrative Department">フガク株式会社 管理部門</strong></p>
+                        <p data-ja="〒150-0013 東京都渋谷区恵比寿1-20-2-405" data-en="1-20-2-405 Ebisu, Shibuya-ku, Tokyo 150-0013, Japan">〒150-0013 東京都渋谷区恵比寿1-20-2-405</p>
+                        <a href="contact.html?type=announcement" class="contact-btn" data-ja="電子公告に関するお問い合わせ" data-en="Electronic Announcement Inquiry">電子公告に関するお問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">FUGAQ</span>
+                        <span class="logo-subtitle" data-ja="フガク株式会社" data-en="FUGAQ Inc.">フガク株式会社</span>
+                    </div>
+                    <p class="footer-description" data-ja="日本から世界を彩るデジタルマーケティング企業" data-en="Digital marketing company bringing colors from Japan to the world">日本から世界を彩るデジタルマーケティング企業</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-ja="会社情報" data-en="Company">会社情報</h4>
+                        <ul>
+                            <li><a href="company.html" data-ja="会社概要" data-en="About Us">会社概要</a></li>
+                            <li><a href="company.html#message" data-ja="代表メッセージ" data-en="CEO Message">代表メッセージ</a></li>
+                            <li><a href="company.html#access" data-ja="アクセス" data-en="Access">アクセス</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-ja="サービス" data-en="Services">サービス</h4>
+                        <ul>
+                            <li><a href="services.html#influencer" data-ja="インフルエンサーマネジメント" data-en="Influencer Management">インフルエンサーマネジメント</a></li>
+                            <li><a href="services.html#sns" data-ja="SNSマーケティング" data-en="SNS Marketing">SNSマーケティング</a></li>
+                            <li><a href="services.html#web" data-ja="ウェブサイト制作" data-en="Website Development">ウェブサイト制作</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-ja="情報" data-en="Information">情報</h4>
+                        <ul>
+                            <li><a href="portfolio.html" data-ja="実績・メディア掲載" data-en="Portfolio & Media">実績・メディア掲載</a></li>
+                            <li><a href="news.html" data-ja="お知らせ" data-en="News">お知らせ</a></li>
+                            <li><a href="ir.html" data-ja="IR情報" data-en="IR Information">IR情報</a></li>
+                            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="company-info">
+                    <p><strong data-ja="フガク株式会社" data-en="FUGAQ Inc.">フガク株式会社</strong></p>
+                    <p data-ja="〒150-0013 東京都渋谷区恵比寿1-20-2-405" data-en="1-20-2-405 Ebisu, Shibuya-ku, Tokyo 150-0013, Japan">〒150-0013 東京都渋谷区恵比寿1-20-2-405</p>
+                    <p data-ja="代表取締役：西津翔太" data-en="CEO: Shota Nishitsu">代表取締役：西津翔太</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 FUGAQ Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Electronic Announcement Filter and Search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryFilter = document.getElementById('categoryFilter');
+            const periodFilter = document.getElementById('periodFilter');
+            const sortOrder = document.getElementById('sortOrder');
+            const keywordSearch = document.getElementById('keywordSearch');
+            const searchButton = document.getElementById('searchButton');
+            const clearFilters = document.getElementById('clearFilters');
+            const noResults = document.getElementById('noResults');
+            
+            // Filter functionality
+            function applyFilters() {
+                const category = categoryFilter.value;
+                const period = periodFilter.value;
+                const sort = sortOrder.value;
+                const keyword = keywordSearch.value.toLowerCase();
+                
+                // This function will be implemented when actual announcement data is available
+                console.log('Applying filters:', { category, period, sort, keyword });
+                
+                // For now, show preparation notice
+                // When announcements are available, this will filter and display them
+            }
+            
+            // Event listeners
+            categoryFilter.addEventListener('change', applyFilters);
+            periodFilter.addEventListener('change', applyFilters);
+            sortOrder.addEventListener('change', applyFilters);
+            searchButton.addEventListener('click', applyFilters);
+            keywordSearch.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    applyFilters();
+                }
+            });
+            
+            // Clear filters
+            clearFilters.addEventListener('click', function() {
+                categoryFilter.value = 'all';
+                periodFilter.value = 'all';
+                sortOrder.value = 'desc';
+                keywordSearch.value = '';
+                applyFilters();
+            });
+        });
+    </script>
+</body>
+</html>

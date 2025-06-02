@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# 主要ページ
+Allow: /index.html
+Allow: /company.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /news.html
+Allow: /ir.html
+Allow: /contact.html
+Allow: /announcement.html
+
+# 静的リソース
+Allow: /style.css
+Allow: /script.js
+Allow: /lang.js
+Allow: /favicon.ico
+
+# クロール不要なファイル
+Disallow: /404.html
+Disallow: /*.pdf$
+
+# サイトマップの場所
+Sitemap: https://fugaq.com/sitemap.xml
+
+# クローラー向けの注意事項
+# フガク株式会社（FUGAQ Inc.）
+# 日本から世界を彩るデジタルマーケティング企業
+# 
+# 重要ページ:
+# - 企業情報: /company.html
+# - サービス: /services.html  
+# - 実績: /portfolio.html
+# - IR情報: /ir.html
+# - 電子公告: /announcement.html
+# - お問い合わせ: /contact.html
+#
+# 特記事項:
+# - 多言語対応（日本語・英語）
+# - 400万人以上の海外ユーザーリーチネットワーク
+# - 協業パートナー「TAKASHii from Japan」実績

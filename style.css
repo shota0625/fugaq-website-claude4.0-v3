@@ -50,6 +50,7 @@ body.lang-en {
     --color-primary: #1a365d;
     --color-primary-light: #2d5a87;
     --color-primary-dark: #0f2a44;
+    --color-primary-rgb: 26, 54, 93; /* For use in rgba */
     
     /* アクセントカラー（金 - 北斎作品へのオマージュ） */
     --color-accent: #d4af37;
@@ -75,9 +76,9 @@ body.lang-en {
     --color-error: #e53e3e;
     --color-info: #3182ce;
 
-    /* Vivid color for special accents - TBD */
-    /* e.g., --color-vivid-red: #ff0000; */
-    /* e.g., --color-vivid-blue: #005eff; */
+    /* Vivid color for special accents */
+    --color-vivid-red: #c9171e; /* Traditional Japanese Red */
+    --color-vivid-blue: #007bbb; /* Bright, Clean Blue */
     
     /* SNSブランドカラー */
     --color-youtube: #ff0000;
@@ -166,7 +167,7 @@ h6 {
 /* Body text refinement for "和モダン" (Wa-Modern) feel may be needed. */
 /* Consider line height, paragraph spacing, or alternative body font. */
 p {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg); /* Increased spacing for better readability */
     color: var(--color-gray-700);
 }
 
@@ -393,7 +394,7 @@ blockquote {
     z-index: 1000;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-gray-200);
+    border-bottom: 1px solid var(--color-primary-light); /* Subtle branding touch */
     transition: all var(--transition-normal);
 }
 
@@ -491,7 +492,7 @@ blockquote {
 }
 
 .nav-link:hover {
-    color: var(--color-primary);
+    color: var(--color-accent); /* Refined hover state to accent color */
     text-decoration: none;
 }
 
@@ -520,7 +521,7 @@ blockquote {
 
 .nav-link.contact-btn:hover {
     background: var(--color-accent);
-    color: var(--color-white);
+    color: var(--color-primary); /* Better contrast with gold background */
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
@@ -542,9 +543,9 @@ blockquote {
     transition: all var(--transition-fast);
 }
 
-.lang-btn:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+.lang-btn:not(.active):hover { /* Hover state for inactive language buttons */
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 
 .lang-btn.active {
@@ -648,9 +649,10 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 20C20 5 40 5 60 10C80 15 90 5 100 10V20H0Z" fill="%23f7fafc" opacity="0.5"/></svg>') repeat-x;
-    background-size: 100px 20px;
-    opacity: 0.3;
+    /* Subtle wave pattern inspired by Hokusai, using a light gray for faintness */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 100 20"><path d="M0 10 Q 25 0, 50 10 T 100 10" fill="none" stroke="%23e2e8f0" stroke-width="1.5"/></svg>') repeat-x;
+    background-size: 100px 20px; /* Adjust size as needed */
+    opacity: 0.5; /* Adjust opacity for subtlety */
 }
 
 .breadcrumb {
@@ -713,10 +715,11 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231a365d" fill-opacity="0.05" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,192C560,213,640,235,720,224C800,213,880,171,960,160C1040,149,1120,171,1200,170.7C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path><path fill="%23d4af37" fill-opacity="0.07" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,181.3C800,171,880,181,960,197.3C1040,213,1120,235,1200,229.3C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>') no-repeat;
+    /* Adjusted fill opacities and colors for more thematic Hokusai feel */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--color-primary)" fill-opacity="0.1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,192C560,213,640,235,720,224C800,213,880,171,960,160C1040,149,1120,171,1200,170.7C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path><path fill="var(--color-accent)" fill-opacity="0.1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,181.3C800,171,880,181,960,197.3C1040,213,1120,235,1200,229.3C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>') no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 1; /* Opacity is now controlled by SVG fill-opacity */
+    opacity: 1;
 }
 
 .hero-content {
@@ -887,6 +890,11 @@ blockquote {
 
 .service-icon svg {
     transition: transform var(--transition-normal);
+}
+.service-icon svg path,
+.service-icon svg circle,
+.service-icon svg rect {
+    fill: var(--color-primary);
 }
 
 .service-card:hover .service-icon svg {
@@ -1132,14 +1140,31 @@ blockquote {
 }
 
 .reason-card {
-    text-align: center;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     padding: var(--spacing-xl);
+    border: 1px solid var(--color-gray-200);
+    transition: all var(--transition-normal);
+    text-align: center;
+}
+
+.reason-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-accent);
 }
 
 .reason-icon {
     margin-bottom: var(--spacing-lg);
     display: flex;
     justify-content: center;
+}
+
+.reason-icon svg path,
+.reason-icon svg circle,
+.reason-icon svg rect {
+    fill: var(--color-primary);
 }
 
 .reason-title {
@@ -1509,11 +1534,11 @@ blockquote {
 
 /* Potential Hokusai motif area: Footer Background, Dividers, or subtle texture. */
 .footer {
-    background: var(--color-gray-900);
+    background: var(--color-primary); /* Changed to deep navy blue */
     color: var(--color-gray-300);
     padding: var(--spacing-3xl) 0 var(--spacing-xl);
     position: relative; /* For pseudo-element positioning */
-    border-top: 3px solid var(--color-primary); /* Base border */
+    border-top: 3px solid var(--color-primary); /* This border will blend with background, ::before handles visual top accent */
 }
 
 .footer::before {
@@ -1593,7 +1618,7 @@ blockquote {
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--color-gray-700);
+    border-top: 1px solid var(--color-primary-light); /* Lighter separator for navy background */
     padding-top: var(--spacing-lg);
     display: flex;
     justify-content: space-between;
@@ -2380,9 +2405,9 @@ blockquote {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 40px;
+    width: 30px; /* Refined width */
     height: 2px;
-    background-color: var(--color-gray-300);
+    background-color: var(--color-accent); /* Changed to accent color */
 }
 
 .feature-list {
@@ -2516,6 +2541,11 @@ blockquote {
     width: 50px;
     height: 50px;
     margin-bottom: var(--spacing-lg);
+}
+.industry-card .industry-icon svg path,
+.industry-card .industry-icon svg circle,
+.industry-card .industry-icon svg rect {
+    fill: var(--color-primary); /* Monochrome primary color */
 }
 .industry-card h3 {
     font-size: 1.25rem;
@@ -2951,7 +2981,11 @@ blockquote {
 }
 .ir-categories .category-card .category-icon svg {
     width: 40px; height: 40px; margin-bottom: var(--spacing-md);
-    /* Style SVG parts if needed, e.g., fill: var(--color-accent); */
+}
+.ir-categories .category-card .category-icon svg path,
+.ir-categories .category-card .category-icon svg circle,
+.ir-categories .category-card .category-icon svg rect {
+    fill: var(--color-primary); /* Monochrome primary color */
 }
 .ir-categories .category-card h3 { font-size: 1.25rem; color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 600; }
 .ir-categories .category-card p { font-size: 0.9rem; color: var(--color-gray-700); margin-bottom: var(--spacing-md); flex-grow: 1; /* Push status to bottom */ }
@@ -2987,7 +3021,11 @@ blockquote {
 
 .ir-features .feature-icon svg {
     width: 30px; height: 30px; flex-shrink: 0; margin-top: 5px;
-    /* Style SVG parts, e.g., fill: var(--color-primary); */
+}
+.ir-features .feature-icon svg path,
+.ir-features .feature-icon svg circle,
+.ir-features .feature-icon svg rect {
+    fill: var(--color-primary); /* Monochrome primary color */
 }
 .ir-features .feature-content h3 { font-size: 1.1rem; font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-xs); }
 .ir-features .feature-content p { font-size: 0.9rem; color: var(--color-gray-700); line-height: 1.6; margin-bottom: 0; }
@@ -3174,7 +3212,7 @@ blockquote {
 .form-textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+    box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.25); /* Corrected global focus shadow */
 }
 
 .form-input.error,
@@ -3606,6 +3644,11 @@ html {
 .contact-overview .highlight-icon {
     margin-bottom: var(--spacing-sm);
 }
+.contact-overview .highlight-icon svg path,
+.contact-overview .highlight-icon svg circle,
+.contact-overview .highlight-icon svg rect {
+    fill: var(--color-primary); /* Monochrome primary color */
+}
 
 .contact-overview .highlight-item h3 {
     font-size: 1.1rem; /* Slightly smaller than section h3 */
@@ -3783,9 +3826,7 @@ html {
 }
 
 /* Ensure form focus shadow uses a variable that can be rgba */
-:root {
-    --color-primary-rgb: 26, 54, 93; /* For use in rgba */
-}
+/* --color-primary-rgb: 26, 54, 93; Moved to main :root variables */
 
 .form-input:focus,
 .form-select:focus,
@@ -3973,6 +4014,11 @@ html {
 .method-icon {
     margin-bottom: var(--spacing-md);
     text-align: center; /* Center icons if they are block/inline-block */
+}
+.contact-categories .category-icon svg path,
+.contact-categories .category-icon svg circle,
+.contact-categories .category-icon svg rect {
+    fill: var(--color-primary); /* Monochrome primary color */
 }
 /* SVGs in .content-icon and .method-icon will be styled inline or via specific classes */
 

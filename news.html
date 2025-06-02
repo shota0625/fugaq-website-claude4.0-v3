@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お知らせ | フガク株式会社</title>
-    <meta name="description" content="フガク株式会社の最新ニュース、企業情報、協業パートナー関連情報、メディア掲載情報をお知らせいたします。海外展開やデジタルマーケティングに関する最新情報を定期的に更新しています。">
-    <meta name="keywords" content="ニュース,お知らせ,企業情報,プレスリリース,メディア掲載,協業パートナー,TAKASHii from Japan">
+    <title data-ja="お知らせ / NEWS | TAKASHii from Japan" data-en="NEWS | TAKASHii from Japan">お知らせ | TAKASHii from Japan</title>
+    <meta name="description" data-ja-desc="TAKASHii from Japanの最新情報、活動報告、メディア掲載などをお知らせします。" data-en-desc="Latest information, activity reports, media features, etc., from TAKASHii from Japan." content="TAKASHii from Japanの最新情報、活動報告、メディア掲載などをお知らせします。">
+    <meta name="keywords" content="TAKASHii from Japan news, announcements, updates, media features, creator news">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -16,19 +16,18 @@
         <nav class="nav-container">
             <div class="logo">
             <a href="index.html" class="logo-link">
-                <img src="fugaq-company-logo-v2.png" alt="FUGAQ Inc. Logo" class="logo-image">
+                <span class="logo-text-takashii" data-ja="TAKASHii from Japan" data-en="TAKASHii from Japan">TAKASHii from Japan</span>
                 </a>
             </div>
             
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
-                    <li><a href="company.html" class="nav-link" data-ja="会社情報" data-en="Company">会社情報</a></li>
-                    <li><a href="services.html" class="nav-link" data-ja="サービス" data-en="Services">サービス</a></li>
-                    <li><a href="portfolio.html" class="nav-link" data-ja="実績・メディア掲載" data-en="Portfolio & Media">実績・メディア掲載</a></li>
-                    <li><a href="news.html" class="nav-link active" data-ja="お知らせ" data-en="News">お知らせ</a></li>
-                    <li><a href="ir.html" class="nav-link" data-ja="IR情報" data-en="IR Information">IR情報</a></li>
-                    <li><a href="contact.html" class="nav-link contact-btn" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                    <li><a href="index.html" class="nav-link" data-ja="ホーム / ABOUT" data-en="Home / ABOUT">ホーム / ABOUT</a></li>
+                    <li><a href="services.html" class="nav-link" data-ja="強み・提供サービス / STRENGTH & SERVICES" data-en="STRENGTH & SERVICES">強み・提供サービス</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-ja="実績紹介 / WORKS" data-en="WORKS">実績紹介 / WORKS</a></li>
+                    <li><a href="audience.html" class="nav-link" data-ja="オーディエンスデータ / AUDIENCE" data-en="AUDIENCE">オーディエンスデータ</a></li>
+                    <li><a href="news.html" class="nav-link active" data-ja="お知らせ / NEWS" data-en="NEWS">お知らせ</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn" data-ja="お問い合わせ / CONTACT" data-en="CONTACT">お問い合わせ</a></li>
                 </ul>
                 
                 <div class="language-switcher">
@@ -51,230 +50,50 @@
             <div class="breadcrumb">
                 <a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a>
                 <span class="separator">></span>
-                <span data-ja="お知らせ" data-en="News">お知らせ</span>
+                <span data-ja="お知らせ / NEWS" data-en="NEWS">お知らせ</span>
             </div>
-            <h1 class="page-title" data-ja="お知らせ" data-en="News & Updates">お知らせ</h1>
-            <p class="page-subtitle" data-ja="企業の最新情報、協業パートナー関連ニュース、メディア掲載情報をお届け" data-en="Latest company updates, partnership news, and media coverage information">企業の最新情報、協業パートナー関連ニュース、メディア掲載情報をお届け</p>
+            <h1 class="page-title" data-ja="お知らせ / NEWS" data-en="NEWS">お知らせ</h1>
+            <p class="page-subtitle" data-ja="TAKASHii from Japanの活動に関する最新情報です。" data-en="The latest information regarding TAKASHii from Japan's activities.">TAKASHii from Japanの活動に関する最新情報です。</p>
         </div>
     </section>
 
-    <!-- News Filter Section -->
-    <section class="news-filter">
+    <!-- News List Section -->
+    <section class="news-list section-padding">
         <div class="container">
-            <div class="filter-controls">
-                <h2 class="filter-title" data-ja="カテゴリー" data-en="Categories">カテゴリー</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-category="all" data-ja="すべて" data-en="All">すべて</button>
-                    <button class="filter-btn" data-category="company" data-ja="企業ニュース" data-en="Company News">企業ニュース</button>
-                    <button class="filter-btn" data-category="partnership" data-ja="協業パートナー" data-en="Partnerships">協業パートナー</button>
-                    <button class="filter-btn" data-category="media" data-ja="メディア掲載" data-en="Media Coverage">メディア掲載</button>
-                    <button class="filter-btn" data-category="service" data-ja="サービス情報" data-en="Service Updates">サービス情報</button>
+            <div class="news-item-placeholder">
+                <h3 data-ja="現在、新しいお知らせはありません。" data-en="There are no new announcements at this time.">現在、新しいお知らせはありません。</h3>
+                <p data-ja="最新情報はSNSもご確認ください。" data-en="Please also check social media for the latest updates.">最新情報はSNSもご確認ください。</p>
+                <div class="social-links-news">
+                    <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.instagram.com/takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
                 </div>
             </div>
-            
-            <div class="search-box">
-                <input type="text" placeholder="キーワードで検索..." class="search-input" data-placeholder-ja="キーワードで検索..." data-placeholder-en="Search by keyword...">
-                <button class="search-btn">
-                    <svg width="20" height="20" viewBox="0 0 20 20">
-                        <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
-                        <line x1="16" y1="16" x2="13" y2="13" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                </button>
-            </div>
+            <!-- Future news items would go here -->
+            <!-- Example of a news item structure (can be added later)
+            <article class="news-item card">
+                <div class="news-item-header">
+                    <span class="news-item-date" data-ja="2024年X月X日" data-en="Month Day, 2024">2024年X月X日</span>
+                    <span class="news-item-category" data-ja="活動報告" data-en="Activity Report">活動報告</span>
+                </div>
+                <h3 class="news-item-title" data-ja="新しい動画シリーズを開始しました！" data-en="New Video Series Launched!">新しい動画シリーズを開始しました！</h3>
+                <p class="news-item-excerpt" data-ja="日本の隠れた文化を探る新しい動画シリーズ「ディープジャパン」がスタートしました。初回は..." data-en="A new video series exploring Japan's hidden culture, 'Deep Japan,' has started. The first episode is about...">日本の隠れた文化を探る新しい動画シリーズ「ディープジャパン」がスタートしました。初回は...</p>
+                <a href="#" class="btn-secondary news-item-link" data-ja="詳細を見る" data-en="Read More">詳細を見る</a>
+            </article>
+             -->
         </div>
     </section>
 
-    <!-- News Content -->
-    <section class="news-content">
-        <div class="container">
-            <!-- Coming Soon Notice -->
-            <div class="coming-soon-notice">
-                <div class="notice-icon">
-                    <svg width="80" height="80" viewBox="0 0 80 80">
-                        <circle cx="40" cy="40" r="35" stroke="#d4af37" stroke-width="3" fill="none"/>
-                        <circle cx="40" cy="40" r="20" fill="#d4af37" opacity="0.2"/>
-                        <path d="M30 40L35 45L50 30" stroke="#d4af37" stroke-width="3" fill="none"/>
-                    </svg>
-                </div>
-                <h3 data-ja="ニュース・お知らせ 準備中" data-en="News & Updates Coming Soon">ニュース・お知らせ 準備中</h3>
-                <p data-ja="現在、企業ニュースやお知らせの配信準備を進めております。以下のような情報を定期的に発信予定です。" data-en="We are currently preparing to distribute company news and updates. We plan to regularly share the following types of information.">現在、企業ニュースやお知らせの配信準備を進めております。以下のような情報を定期的に発信予定です。</p>
-            </div>
-
-            <!-- Upcoming Content Types -->
-            <div class="upcoming-content">
-                <h3 data-ja="今後お届けする情報" data-en="Information We Will Provide">今後お届けする情報</h3>
-                
-                <div class="content-types-grid">
-                    <div class="content-type-card">
-                        <div class="content-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60">
-                            <rect x="10" y="15" width="40" height="30" rx="3" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <line x1="15" y1="25" x2="45" y2="25" stroke="var(--color-accent)" stroke-width="2"/>
-                            <line x1="15" y1="30" x2="40" y2="30" stroke="var(--color-primary)" stroke-width="1"/>
-                            <line x1="15" y1="35" x2="35" y2="35" stroke="var(--color-primary)" stroke-width="1"/>
-                            <circle cx="35" cy="10" r="5" fill="var(--color-accent)"/>
-                                <text x="35" y="14" text-anchor="middle" font-size="8" fill="white">新</text>
-                            </svg>
-                        </div>
-                        <h4 data-ja="企業ニュース" data-en="Company News">企業ニュース</h4>
-                        <ul>
-                            <li data-ja="新サービス・機能のリリース情報" data-en="New service and feature releases">新サービス・機能のリリース情報</li>
-                            <li data-ja="組織体制・人事に関するお知らせ" data-en="Organizational and personnel updates">組織体制・人事に関するお知らせ</li>
-                            <li data-ja="事業拡大・新拠点開設情報" data-en="Business expansion and new office openings">事業拡大・新拠点開設情報</li>
-                            <li data-ja="企業の重要な方針変更" data-en="Important policy changes">企業の重要な方針変更</li>
-                        </ul>
-                        <div class="update-frequency">
-                            <span class="frequency-label" data-ja="更新頻度：" data-en="Update Frequency:">更新頻度：</span>
-                            <span class="frequency-value" data-ja="月1-2回" data-en="1-2 times per month">月1-2回</span>
-                        </div>
-                    </div>
-                    
-                    <div class="content-type-card">
-                        <div class="content-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60">
-                            <circle cx="30" cy="30" r="20" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="25" r="5" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                            <circle cx="40" cy="25" r="5" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                            <path d="M20 35Q30 45 40 35" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="協業パートナー関連" data-en="Partnership Updates">協業パートナー関連</h4>
-                        <ul>
-                            <li data-ja="TAKASHii from Japan関連ニュース" data-en="TAKASHii from Japan related news">TAKASHii from Japan関連ニュース</li>
-                            <li data-ja="新規パートナーシップ締結" data-en="New partnership agreements">新規パートナーシップ締結</li>
-                            <li data-ja="協業プロジェクト成果報告" data-en="Collaborative project results">協業プロジェクト成果報告</li>
-                            <li data-ja="共同イベント・キャンペーン情報" data-en="Joint events and campaigns">共同イベント・キャンペーン情報</li>
-                        </ul>
-                        <div class="update-frequency">
-                            <span class="frequency-label" data-ja="更新頻度：" data-en="Update Frequency:">更新頻度：</span>
-                            <span class="frequency-value" data-ja="随時" data-en="As needed">随時</span>
-                        </div>
-                    </div>
-                    
-                    <div class="content-type-card">
-                        <div class="content-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60">
-                            <rect x="5" y="15" width="50" height="30" rx="5" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <circle cx="15" cy="25" r="3" fill="var(--color-accent)"/>
-                            <line x1="22" y1="25" x2="45" y2="25" stroke="var(--color-primary)" stroke-width="2"/>
-                            <line x1="15" y1="35" x2="35" y2="35" stroke="var(--color-primary)" stroke-width="1"/>
-                            <path d="M40 35L45 30L50 35" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="メディア掲載情報" data-en="Media Coverage">メディア掲載情報</h4>
-                        <ul>
-                            <li data-ja="テレビ・ラジオ番組出演" data-en="TV and radio appearances">テレビ・ラジオ番組出演</li>
-                            <li data-ja="新聞・雑誌での取材記事" data-en="Newspaper and magazine interviews">新聞・雑誌での取材記事</li>
-                            <li data-ja="ウェブメディア掲載情報" data-en="Web media coverage">ウェブメディア掲載情報</li>
-                            <li data-ja="業界誌・専門誌での紹介" data-en="Industry publication features">業界誌・専門誌での紹介</li>
-                        </ul>
-                        <div class="update-frequency">
-                            <span class="frequency-label" data-ja="更新頻度：" data-en="Update Frequency:">更新頻度：</span>
-                            <span class="frequency-value" data-ja="リアルタイム" data-en="Real-time">リアルタイム</span>
-                        </div>
-                    </div>
-                    
-                    <div class="content-type-card">
-                        <div class="content-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60">
-                            <rect x="10" y="10" width="40" height="25" rx="3" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="22" r="3" fill="var(--color-accent)"/>
-                            <line x1="27" y1="22" x2="40" y2="22" stroke="var(--color-primary)" stroke-width="2"/>
-                            <line x1="15" y1="28" x2="35" y2="28" stroke="var(--color-primary)" stroke-width="1"/>
-                            <rect x="15" y="40" width="30" height="15" rx="2" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <line x1="20" y1="45" x2="35" y2="45" stroke="var(--color-accent)" stroke-width="2"/>
-                            <line x1="20" y1="50" x2="30" y2="50" stroke="var(--color-primary)" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="サービス・実績情報" data-en="Service & Achievement Updates">サービス・実績情報</h4>
-                        <ul>
-                            <li data-ja="新サービス・機能の詳細紹介" data-en="Detailed new service and feature introductions">新サービス・機能の詳細紹介</li>
-                            <li data-ja="四半期実績報告" data-en="Quarterly performance reports">四半期実績報告</li>
-                            <li data-ja="成功事例・ケーススタディ" data-en="Success stories and case studies">成功事例・ケーススタディ</li>
-                            <li data-ja="業界トレンド・分析記事" data-en="Industry trends and analysis articles">業界トレンド・分析記事</li>
-                        </ul>
-                        <div class="update-frequency">
-                            <span class="frequency-label" data-ja="更新頻度：" data-en="Update Frequency:">更新頻度：</span>
-                            <span class="frequency-value" data-ja="四半期ごと" data-en="Quarterly">四半期ごと</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Subscription Section -->
-            <div class="news-subscription">
-                <h3 data-ja="最新情報の受け取り方法" data-en="How to Receive Updates">最新情報の受け取り方法</h3>
-                <p data-ja="フガク株式会社の最新ニュースやお知らせを確実に受け取りたい方は、以下の方法をご利用ください。" data-en="For those who want to reliably receive FUGAQ Inc.'s latest news and updates, please use the following methods.">フガク株式会社の最新ニュースやお知らせを確実に受け取りたい方は、以下の方法をご利用ください。</p>
-                
-                <div class="subscription-methods">
-                    <div class="method-card">
-                        <div class="method-icon">
-                            <svg width="50" height="50" viewBox="0 0 50 50">
-                            <rect x="5" y="15" width="40" height="25" rx="3" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <path d="M5 15L25 30L45 15" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="メールでのお知らせ" data-en="Email Updates">メールでのお知らせ</h4>
-                        <p data-ja="重要なお知らせを直接メールでお送りします。お問い合わせフォームから「ニュース配信希望」をお選びください。" data-en="We will send important updates directly via email. Please select 'News subscription request' in the contact form.">重要なお知らせを直接メールでお送りします。お問い合わせフォームから「ニュース配信希望」をお選びください。</p>
-                        <a href="contact.html?type=newsletter" class="method-link" data-ja="配信登録はこちら" data-en="Subscribe Here">配信登録はこちら</a>
-                    </div>
-                    
-                    <div class="method-card">
-                        <div class="method-icon">
-                            <svg width="50" height="50" viewBox="0 0 50 50">
-                            <circle cx="25" cy="25" r="20" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <path d="M25 10L30 20L40 20L32 28L35 38L25 33L15 38L18 28L10 20L20 20L25 10Z" fill="var(--color-accent)"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="ウェブサイト定期チェック" data-en="Regular Website Visits">ウェブサイト定期チェック</h4>
-                        <p data-ja="こちらのお知らせページを定期的にご確認ください。月1-2回の頻度で新しい情報を掲載いたします。" data-en="Please check this news page regularly. We will post new information 1-2 times per month.">こちらのお知らせページを定期的にご確認ください。月1-2回の頻度で新しい情報を掲載いたします。</p>
-                        <a href="#" class="method-link bookmark-link" data-ja="ブックマーク推奨" data-en="Bookmark Recommended">ブックマーク推奨</a>
-                    </div>
-                    
-                    <div class="method-card">
-                        <div class="method-icon">
-                            <svg width="50" height="50" viewBox="0 0 50 50">
-                            <rect x="10" y="10" width="30" height="30" rx="5" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="2" fill="var(--color-accent)"/>
-                            <line x1="25" y1="20" x2="35" y2="20" stroke="var(--color-primary)" stroke-width="2"/>
-                            <line x1="15" y1="27" x2="30" y2="27" stroke="var(--color-primary)" stroke-width="1"/>
-                            <line x1="15" y1="32" x2="25" y2="32" stroke="var(--color-primary)" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        <h4 data-ja="メディア関係者向け" data-en="For Media Personnel">メディア関係者向け</h4>
-                        <p data-ja="メディア関係者の方には、プレスリリースや取材可能な情報を優先的にお送りいたします。" data-en="For media personnel, we will prioritize sending press releases and interview-ready information.">メディア関係者の方には、プレスリリースや取材可能な情報を優先的にお送りいたします。</p>
-                        <a href="contact.html?type=media" class="method-link" data-ja="メディア向け登録" data-en="Media Registration">メディア向け登録</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Future Content Preview -->
-            <div class="content-preview">
-                <h3 data-ja="最新のお知らせ" data-en="Latest News">最新のお知らせ</h3>
-                
-                <div class="preview-items">
-                    <div class="preview-item">
-                        <div class="preview-header">
-                            <span class="preview-date">2025年4月</span>
-                            <span class="preview-category company" data-ja="企業ニュース" data-en="Company News">企業ニュース</span>
-                        </div>
-                        <h4 data-ja="フガク株式会社設立のお知らせ" data-en="Announcement of FUGAQ Inc. Establishment">フガク株式会社設立のお知らせ</h4>
-                        <p data-ja="日本から世界を豊かにするデジタルマーケティング企業として、正式に事業をスタートいたします。" data-en="We officially start our business as a digital marketing company that enriches the world from Japan.">日本から世界を豊かにするデジタルマーケティング企業として、正式に事業をスタートいたします。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter CTA -->
-    <section class="newsletter-cta">
+    <!-- CTA Section (Optional, can be removed or adapted if not needed on news page) -->
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title" data-ja="最新情報をお見逃しなく" data-en="Don't Miss Our Latest Updates">最新情報をお見逃しなく</h2>
-                <p class="cta-description" data-ja="フガク株式会社の重要なお知らせやニュースを確実に受け取るために、ぜひメール配信にご登録ください。" data-en="To ensure you receive important announcements and news from FUGAQ Inc., please register for our email updates.">フガク株式会社の重要なお知らせやニュースを確実に受け取るために、ぜひメール配信にご登録ください。</p>
-                <div class="cta-buttons">
-                    <a href="contact.html?type=newsletter" class="btn-primary large" data-ja="メール配信登録" data-en="Subscribe to Updates">メール配信登録</a>
-                    <a href="contact.html" class="btn-secondary large" data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</a>
+                <h2 class="cta-title" data-ja="最新情報をチェック" data-en="Check Out The Latest">最新情報をチェック</h2>
+                <p class="cta-description" data-ja="TAKASHii from Japanの活動を見逃さないよう、SNSもフォローしてください！" data-en="Follow TAKASHii from Japan on social media to not miss out on the latest activities!">TAKASHii from Japanの活動を見逃さないよう、SNSもフォローしてください！</p>
+                <div class="cta-buttons social-links-news">
+                     <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.instagram.com/takashiifromjapan" target="_blank" rel="noopener noreferrer" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
                 </div>
             </div>
         </div>
@@ -286,51 +105,44 @@
             <div class="footer-content">
                 <div class="footer-main">
                     <div class="footer-logo">
-                        <span class="logo-text">FUGAQ</span>
-                        <span class="logo-subtitle" data-ja="フガク株式会社" data-en="FUGAQ Inc.">フガク株式会社</span>
+                        <span class="logo-text-takashii" data-ja="TAKASHii from Japan" data-en="TAKASHii from Japan">TAKASHii from Japan</span>
                     </div>
-                    <p class="footer-description" data-ja="日本から世界を彩るデジタルマーケティング企業" data-en="Digital marketing company bringing colors from Japan to the world">日本から世界を彩るデジタルマーケティング企業</p>
+                    <p class="footer-description" data-ja="日本のリアルを世界へ発信するコンテンツクリエイター。" data-en="Content creator sharing the real Japan with the world.">日本のリアルを世界へ発信するコンテンツクリエイター。</p>
                 </div>
-                
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4 class="footer-heading" data-ja="会社情報" data-en="Company">会社情報</h4>
+                        <h4 class="footer-heading" data-ja="サイトマップ" data-en="Sitemap">サイトマップ</h4>
                         <ul>
-                            <li><a href="company.html" data-ja="会社概要" data-en="About Us">会社概要</a></li>
-                            <li><a href="company.html#message" data-ja="代表メッセージ" data-en="CEO Message">代表メッセージ</a></li>
-                            <li><a href="company.html#access" data-ja="アクセス" data-en="Access">アクセス</a></li>
+                            <li><a href="index.html" data-ja="ホーム / ABOUT" data-en="Home / ABOUT">ホーム / ABOUT</a></li>
+                            <li><a href="services.html" data-ja="強み・提供サービス" data-en="STRENGTH & SERVICES">強み・提供サービス</a></li>
+                            <li><a href="portfolio.html" data-ja="実績紹介 / WORKS" data-en="WORKS">実績紹介 / WORKS</a></li>
                         </ul>
                     </div>
-                    
-                    <div class="footer-column">
-                        <h4 class="footer-heading" data-ja="サービス" data-en="Services">サービス</h4>
-                        <ul>
-                            <li><a href="services.html#influencer" data-ja="インフルエンサーマネジメント" data-en="Influencer Management">インフルエンサーマネジメント</a></li>
-                            <li><a href="services.html#sns" data-ja="SNSマーケティング" data-en="SNS Marketing">SNSマーケティング</a></li>
-                            <li><a href="services.html#web" data-ja="ウェブサイト制作" data-en="Website Development">ウェブサイト制作</a></li>
-                        </ul>
-                    </div>
-                    
                     <div class="footer-column">
                         <h4 class="footer-heading" data-ja="情報" data-en="Information">情報</h4>
                         <ul>
-                            <li><a href="portfolio.html" data-ja="実績・メディア掲載" data-en="Portfolio & Media">実績・メディア掲載</a></li>
-                            <li><a href="news.html" data-ja="お知らせ" data-en="News">お知らせ</a></li>
-                            <li><a href="ir.html" data-ja="IR情報" data-en="IR Information">IR情報</a></li>
-                            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                            <li><a href="audience.html" data-ja="オーディエンスデータ" data-en="AUDIENCE">オーディエンスデータ</a></li>
+                            <li><a href="news.html" data-ja="お知らせ" data-en="NEWS">お知らせ</a></li>
+                            <li><a href="contact.html" data-ja="お問い合わせ" data-en="CONTACT">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-ja="関連リンク" data-en="Related Links">関連リンク</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" data-ja="YouTubeチャンネル" data-en="YouTube Channel">YouTubeチャンネル</a></li>
+                            <li><a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" rel="noopener noreferrer" data-ja="TikTokアカウント" data-en="TikTok Account">TikTokアカウント</a></li>
+                            <li><a href="https://www.instagram.com/takashiifromjapan" target="_blank" rel="noopener noreferrer" data-ja="Instagramアカウント" data-en="Instagram Account">Instagramアカウント</a></li>
+                            <li><a href="#" class="disabled" data-ja="所属エージェンシー (準備中)" data-en="Agency (Coming Soon)">所属エージェンシー (準備中)</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <div class="company-info">
-                    <p><strong data-ja="フガク株式会社" data-en="FUGAQ Inc.">フガク株式会社</strong></p>
-                    <p data-ja="〒150-0013 東京都渋谷区恵比寿1-20-2-405" data-en="1-20-2-405 Ebisu, Shibuya-ku, Tokyo 150-0013, Japan">〒150-0013 東京都渋谷区恵比寿1-20-2-405</p>
-                    <p data-ja="代表取締役：西津翔太" data-en="CEO: Shota Nishitsu">代表取締役：西津翔太</p>
+                     <p data-ja="本サイトに関するお問い合わせは<a href='contact.html'>こちら</a>から" data-en="For inquiries regarding this site, please contact us <a href='contact.html'>here</a>.">本サイトに関するお問い合わせは<a href='contact.html'>こちら</a>から</p>
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; 2025 FUGAQ Inc. All rights reserved.</p>
+                    <p>&copy; 2024 TAKASHii from Japan. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -339,29 +151,5 @@
     <!-- Scripts -->
     <script src="lang.js"></script>
     <script src="script.js"></script>
-    <script>
-        // News filter functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const searchInput = document.querySelector('.search-input');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const category = this.getAttribute('data-category');
-                    // Filter logic will be implemented when actual news content is added
-                    console.log('Filter by category:', category);
-                });
-            });
-            
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                // Search logic will be implemented when actual news content is added
-                console.log('Search term:', searchTerm);
-            });
-        });
-    </script>
 </body>
 </html>
